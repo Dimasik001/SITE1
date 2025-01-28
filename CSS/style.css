@@ -1,0 +1,921 @@
+ body {
+  margin: 0; 
+}
+  .header-wrapper {
+	height:170px; 
+	align-items: center;
+    padding: 0px 0;
+    position: fixed; 
+    top: 0;
+    left: 0;
+	background-color: white;
+    width: 100%;
+    z-index: 1000; 
+    
+}
+
+
+.top-bar {
+	background-color: #032348;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+	height:40px;
+  
+	
+}
+
+.top-bar a {
+	color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+	margin-left: 6%; 
+	
+}
+.mail-link:hover {
+   transition: color 0.8s ease;
+  color: red;
+}
+
+.contact-info {
+	
+	display: flex;
+    margin-right: 5%; 
+	font-family: Arial, sans-serif; /* Устанавливаем шрифт Arial */
+	align-items: center;
+	
+}
+
+.location-email span,
+.location-email a { 
+    color: white; /* Белый цвет текста */
+    font-size: 16px; 
+    font-family: Arial, sans-serif; 
+}
+.location-email { 
+align-items: center;
+  display: flex;
+  gap: 0px; 
+ 
+}
+.location-email span {
+  margin-right: 130px;
+}
+
+.location-email a{
+  margin-left: auto; /*Выталкиваем ссылку вправо */
+  
+}
+.top-bar img {
+    width: 24px;
+    height: 25px;
+    margin-right: 5px;
+}
+.location-email img:last-child {
+    width: 50px;
+    height: 30px;} 
+	
+
+.telegram-icon:hover,
+.mail-icon:hover {
+
+filter: invert(36%) sepia(98%) hue-rotate(0deg) brightness(90%) contrast(90%) saturate(1000%) saturate(1000%) sepia(10%) 
+brightness(150%) hue-rotate(0deg) saturate(500%);
+}
+
+.container {
+	 font-family: Arial, sans-serif;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%; 
+   
+    
+}
+.container a { 
+  text-decoration: none; 
+  color: black;          
+  transition: color 0.8s ease;
+}
+.container a:hover {
+  color: red;
+}
+.logo {
+  margin-right: 1%; 
+  margin-left: 5%; 
+}
+.logo img {
+  width: 80px;
+  height: auto; 
+}
+
+.company-name {
+   margin-left: 0px; 
+  margin-right: 0px; 
+  font-weight: bold;
+  font-family: Arial, sans-serif; /* Ensure Arial is used for company name */
+  font-size: 29px; 
+}
+
+
+nav {
+	  text-decoration: none;
+    margin: 0 auto; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav li {
+  display: inline; 
+  margin: 0 20px; 
+}
+
+.search {
+
+  margin-right: 6%; /* 6% right margin for the search */
+}
+
+.search input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px; 
+  width: 200px; 
+  background-color: #f5f5f5; 
+  color: #888; 
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+.highlight {
+    background-color: yellow; /* Цвет выделения */
+}
+.search input[type="text"]:focus {
+  outline: none; 
+  border-color: #007bff; 
+}
+.search #search-button {
+  padding: 10px 15px; /* Adjust padding as needed */
+  border: 1px solid #ccc;
+  border-radius: 0 5px 5px 0; 
+  background-color: #f5f5f5; 
+  color: #888; /* Same text color as input */
+  font-size: 16px;
+  cursor: pointer; /* Change cursor to a hand */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.search #search-button:hover {
+  background-color: red; /* Blue background on hover */
+  color: white; /* White text on hover */
+}
+
+
+
+.catalog-button {
+  ont-family: inherit; 
+  font-size: 1vw; 
+  font-weight: inherit; 
+  background-color: red; 
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.catalog-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px 5px rgba(255, 0, 0, 0.3); /*Increased spread and opacity*/
+}
+.page-title {
+    text-align: center;
+  }
+
+
+ .slider-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .image-slider {
+    margin-top: 170px; 
+      position: relative;
+	    width: 100%; /* Make the slider occupy the full width */
+    box-sizing: border-box; /* Include padding and border in width */
+    overflow: hidden;
+}
+
+  .slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+  .slider-title {
+  font-family: Arial ; /* Specify Arial font */
+  font-weight:600;
+  font-size: 2vw; 
+  color: white;
+  position: absolute;
+  top: 10%; 
+  left: 15%; 
+  z-index: 1; 
+  padding: 5px 10px; 
+}
+.small-text {
+   font-size: 1.2vw; 
+ }
+  .slider img {
+flex: 1 0 33.33%;
+     max-width: 100%;
+    height: auto;
+    object-fit: cover;
+	
+  }
+  
+  .prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #d3d3d3; /* Светло-серый фон */
+    border: none;
+    border-radius: 50%; /* Круглые кнопки */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; 
+    font-weight: bold; /* Жирный шрифт */
+    font-size: 23px; /* Увеличение размера */
+  }
+  
+  .prev-button {
+    left: 5%;
+  }
+  .next-button {
+    right:  5%;
+  }
+  
+  /*Added for responsive behavior*/
+@media (max-width: 768px) {
+  .slider img {
+    height: 300px; /*Fixed height on smaller screens*/
+    object-fit: cover;
+  }
+}
+  .prev-button:hover, .next-button:hover {
+    background-color: #c0c0c0; /* Более темный серый при наведении */
+    color: red;
+  }
+  
+
+
+.catalog-section {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px; 
+}
+
+.catalog-header {
+	
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    margin-bottom: 20px; 
+    padding: 15px 0; 
+}
+
+
+.catalog-title {
+    font-family: Arial, sans-serif;
+    font-size: 2.2em;
+    color: black;
+    margin: 0;
+    font-weight: bold;
+    margin-left: 15%; 
+}
+
+.view-all-link {
+    font-weight: bold;
+    color: black; 
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto; 
+    font-family: Arial, sans-serif;
+	font-size: 1.1em;
+    margin-right: 15%;
+    transition: color 0.8s ease;
+  }
+  .view-all-link:hover {
+    color: red;
+  }
+
+.view-all-link::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid black; 
+    width: 0;
+    height: 0;
+}
+
+.catalog-grid {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 40px;
+    width:82%; 
+    box-sizing: border-box; 
+}
+
+.catalog-item {
+  font-family: Arial, sans-serif;
+  color: #000;
+  max-width: 350px; 
+  box-sizing: border-box;
+    box-sizing: border-box;
+   text-align: center;
+    text-decoration: none;
+    border: 2px solid #ccc;
+    padding: 20px;
+    
+}
+.catalog-item:hover {
+  background-color: #d3d4d4; 
+  transition: background-color 0.3s ease; 
+}
+
+.catalog-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.catalog-item h3{
+    font-weight: bold; 
+}
+.product-details {
+  color: #888; 
+   font-size: 14px; 
+}
+
+.product-details ul {
+  list-style: none; 
+  padding-left: 0; 
+}
+
+.product-details ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.catalog-item hr {
+  width: 30%; 
+  border: 2px solid #0f0f0f;
+  margin: 10px auto; 
+} 
+.product-image img {
+  width: 50%;
+  height: auto;
+  border-radius: 50%; 
+  display: block;  
+}
+.product-image {
+  display: grid; 
+  place-items: center; 
+}
+
+.product-details li::before {
+  content: attr(data-param); 
+  margin-right: 5px;     
+}
+.product-details li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-price {
+  margin-left: 2%;  
+  text-align: left;
+  font-weight: bold; 
+}
+
+.catalog-item { 
+    display: flex;
+    flex-direction: column;  
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buy-button, .details-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex; 
+    align-items: center;
+    gap: 5px;
+    transition: all 0.5s ease;
+    text-align: center;
+    font-size: 16px;
+    color: inherit;
+    background-color: inherit;
+	width: 32%;
+}
+
+.buy-button {
+    background-color: red;
+    color: white;
+    margin-left: 2%; 
+font-weight: 500; 	
+}
+
+.buy-button:hover {
+    transform: scale(1.05);
+}
+
+.details-button {
+    background-color: transparent;
+    color: gray;
+    border: 1px solid gray;
+    position: relative;
+}
+
+.details-button:hover {
+    color: black;
+    border-color: black;
+}
+
+.buy-button img {
+    width: 23px;
+    height: auto;
+    margin-right: 8%;
+}
+
+.details-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%) rotate(90deg);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid gray;
+}
+
+.details-button:hover::after {
+    border-bottom-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Доставка*/
+.delivery-container {
+	margin-top: 5%; 
+ background-color: rgb(235, 238, 241);
+  font-family: Arial, sans-serif;
+  color: gray;
+  display: flex;
+  gap: 7.5%;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding: 20px;
+}
+
+.delivery-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.delivery-content label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+
+.delivery-content input { 
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  font-size: 1em; 
+  color: gray;     
+}
+
+.delivery-content input[type="number"] {
+
+}
+
+
+.delivery-content select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  font-size:  1em; 
+  color: gray;   
+}
+
+.cargo-and-volume {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;  
+}
+
+.cargo-type {
+  flex-grow: 1;
+  margin-bottom: 2%; 
+}
+.loading-address {
+  margin-bottom: 2%; 
+}
+
+.route-calculation {
+ font-weight: bold;
+  margin-bottom: 30px; 
+}
+.delivery-title {
+  font-family: Arial, sans-serif;
+  color: #000;
+  font-size: 2.2em;
+}
+.counter {
+  display: flex;
+  align-items: center; 
+  height: 34px; 
+  margin-bottom: 22%; 
+}
+
+
+
+.counter button {
+  height: 100%;
+  width: 25px;
+  font-size: 20px;
+  margin: 0 5px;
+  border: none;
+  background-color: rgb(235, 238, 241);
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.volume-control label {
+  text-align: center;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.counter input {
+  width: 45px;
+  text-align: center;
+  border: 1px solid #ccc; 
+  font-size: 1em;
+  color: gray;
+  box-sizing: border-box;
+  margin-top:12%;
+}
+
+.kamaz-image {
+  max-width: 30%;
+  max-height: auto;
+  object-fit: contain;
+}
+.cargo-type {
+  flex-grow: 1;
+  margin-right: 20px; 
+}
+
+.custom-number-input {
+  box-sizing: border-box;
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 4px;
+  text-align: center;
+  border: 1px solid #ccc;
+  font-size: 14px; 
+  color: gray;
+}
+
+.custom-number-input::-webkit-inner-spin-button,
+.custom-number-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Отзывчивость */
+@media (max-width: 768px) {
+  .delivery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .delivery-section {
+    width: 100%;
+    max-width: unset;
+  }
+  .kamaz-image {
+    max-width: 100%;
+  }
+}
+
+/*Камазы*/
+.image-text-blocks {
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+  background-color: rgb(235, 238, 241);
+  justify-content: space-between; 
+  flex-wrap: nowrap; 
+  flex-direction: column; 
+   padding-bottom: 3%;
+}
+.image-text-blocks h3 {
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+}
+.image-text-blocks h2 {
+ margin-top:1%;	
+ text-align: center;
+ font-size: 1.5em;
+  margin-bottom: 20px; 
+   font-family: Arial, sans-serif;
+}
+.block-container { 
+    display: flex;
+    width: 100%;
+    justify-content: center; 
+}
+
+.block {
+  padding: 15px;
+  display: flex;             
+  flex-direction: column;    
+  align-items: center;
+ border: 2px solid #ccc;
+  width: 15%; 
+  margin: 15px;             
+  box-sizing: border-box;  
+   transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.block:hover {
+  background-color: white;
+}
+.block.active {
+  border-color: red;
+  border-width: 3px;
+   background-color: white;
+   cursor: default;
+}
+
+
+
+.value-parameter {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;                    
+  margin-top: 10px;              
+}
+
+.block img {
+  max-width: 100%; 
+  height: auto;   
+  display: block; 
+}
+
+@media (max-width: 768px) { 
+  .block {
+    width: 100%; 
+  }
+}
+
+
+.value,
+.parameter {
+  font-family: Arial, sans-serif;
+  color: #888; /* Gray color */
+  text-align: left;
+  font-size:15px;
+}
+.selected-vehicle {
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+.selection-and-button {
+  display: flex;
+   width: 64.7%;
+  flex-direction: column; 
+  align-items: flex-start; 
+gap: 1.4rem;
+}
+
+
+
+#selected-vehicle-text.bold {
+  font-weight: bold;
+}
+
+#calculateButton {
+  background-color: red; 
+  border: none; 
+  color: white; 
+  padding: 15px 28px; 
+  border-radius: 0; 
+  cursor: pointer;
+   font-family: Arial, sans-serif;
+   font-size: 1.1em;
+transition: transform 0.5s ease;
+}
+
+
+#calculateButton:hover {
+  transform: scale(1.03);
+  
+}
+
+#calculationSection {
+  padding-top: 2%;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+   width: 68.5%; 
+  margin: 0 auto;
+}
+
+
+
+#calculationTable {
+  width: 100%;
+  margin: 10px auto; 
+  border-collapse: collapse;
+  text-align: center; 
+}
+
+#calculationTable th,
+#calculationTable td {
+  border: 1px solid #ddd; 
+  padding: 8px;
+}
+
+#calculationTable th {
+  background-color: white; 
+}
+
+#calculationTable td,
+#calculationTable th {
+  font-family: Arial, sans-serif;
+  color: gray; 
+  font-weight: normal;
+  font-size: 1.0em;
+}
+
+#calculationTable th {
+   border: none; 
+  font-weight: normal;
+  font-size: 0.9em;
+
+}
+
+#calculationTable tr:nth-child(2) td{
+  border: 2px solid #ddd; 
+
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.9em;
+    
+}
+
+
+#calculationTable th:first-child,
+#calculationTable td:first-child {
+  padding-left: 2%;
+  text-align: left;
+  width: 34%;
+}
+
+
+#calculationSection p {
+  font-size: 1.1em;
+  margin-bottom: 2%; 
+  margin-top: 3%;  
+}
+
+.edit-order-button {
+  width: 16%; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px; 
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: transparent; 
+  text-decoration: none;
+  font-family: Arial, sans-serif; 
+  font-size: 0.7em; 
+  color: gray;
+    transition: color 0.5s ease;
+}
+.edit-order-button:hover {
+  color:black;
+}
+
+.edit-order-button img {
+  width: 15px; 
+  height: auto;
+}
+
+.edit-order-button span {
+  font-weight: bold;
+}
+.hr-container {
+  width: 100%; 
+  border-bottom: 2px solid #ddd;
+  margin: 10px 0;  
+
+}
+.total-section{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.total-container{
+  display: flex;
+  gap: 35px;
+  font-size: 1.1em;
+  color: gray; 
+  font-family: Arial, sans-serif;
+}
+.total-container span:first-child{
+  color:black;
+   font-size: 1.1em;
+}
+.hidden-items{
+   display: none;
+}
+
+/*Карта и блок справа*/
+
+#deliveryDetailsSection {
+  display: flex;
+  width: 100%;
+    gap: 10px;
+     margin-top: 20px; /* Add some space at the top */
+}
+
+.map-container {
+  width: 50%; /* Map takes up half of the available width */
+    padding-right: 10px;
+}
+.delivery-info {
+  width: 50%; /* Delivery info takes up the other half of the available width */
+    padding-left: 10px;
+}
+.delivery-info h1 {
+     font-size: 1.2em; /* Style headings */
+    color: #333;
+     margin-bottom: 10px;
+
+}
+.delivery-info p {
+     font-size: 1em; /* Style paragraph */
+    color: #555;
+}
